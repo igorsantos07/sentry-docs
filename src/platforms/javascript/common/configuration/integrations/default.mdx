@@ -208,8 +208,7 @@ This example removes the default-enabled integration for adding breadcrumbs to t
 ```javascript
 Sentry.init({
   // ...
-
-  integrations: function(integrations) {
+  integrations: function (integrations) {
     // integrations will be all default integrations
     return integrations.filter(function(integration) {
       return integration.name !== "Breadcrumbs";
